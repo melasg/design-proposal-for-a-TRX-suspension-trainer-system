@@ -1,5 +1,5 @@
 # design-project-TRX-system
- Design of aPortable TRX Suspension Trainer Anchoring Structure for a mechanical engineering course.
+My proposed design report of a Portable TRX Suspension Trainer Anchoring Structure that leverages the user's weight against two truss frames linked by the strap pulled by Tension at the anchor point, while a water counterweight tank balances the user weight from the ground level joints.
 ## Structure
 ```
 .

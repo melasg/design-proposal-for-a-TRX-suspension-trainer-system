@@ -1,58 +1,43 @@
 \chapter{Introduction}
-
-Blended-wing-body(BWB) aircraft configurations becoming more and more attractive due to financial and environmental factors. Besides of high lift to drag ratio that can improve fuel efficiency, there are many other advantages of BWB over conventional 'tube with wings' configuration aircraft, such as lower noisy, huge volumetric capacity, flexible cabin layout potential, significantly DOC reduction, etc. The drawback of BWB is that their structures are not well understood and still many possibilities to find out an optimal layout, while the layout of conventional configurations has been investigated extensively and well understood. Already there are some successfully BWB configurations object design in aircraft industry, like Boeing X-48, Airbus A380, etc. Which potentially reduced fuel consuming by 20\% around. \\
-The application of optimization in exploring the structure layout of BWB aircraft has predominately focused on the established methods of parameterizing the geometry and performing size and shape optimization. Different with size and shape optimization, which focusing on geometry parameter or shape of object, topology optimization concentrated on the material distribution of structures. Thus the advantage over other optimization method is that no predefined structure was needed in advance.\\
-This paper implements topology optimization method on a BWB configuration unmanned aerial vehicle(UAV) in order to testify the feasible of optimization algorithm as well as the optimal structure that can improve the performances of UAV. The market of UAV is increasing significantly in recent years, probably because of the use of UAV has changed from military to civil. And the endurance of UAV is one of its key performances. Which means the successfully applied of topology optimization on our project is important.
-
-
-
+The TRX System is a new system of labile suspension weight training purported to develop the user's strength, balance, flexibility, and core stability simultaneously. The TRX system requires the use and design of truss sections, which are held up by legs. There are also corner braces since the elevation of the truss frames requires this for the specific use of leveraging gravity. The requirements of the anchors and frames prevents the entire system from "walking" or rocking while in use that could lead to unsafe physicl use. In this way, the TRX frame is effectively a good way to theoretically balance the loads which requires the foresight, design, and analysis so that failure to balance the loads resulting in toppling or injury does not happen.
 \section{Scope}
+Despite the widespread use in commercial gyms, homes, parks, the interest in the development of a free-standing structure that can be packaged and marketed to the home user without the exorbitant price of materials for shipping as well as the recommendation for professional installation is great in demand. The demand for a free-standing structure provided for a TRX system anchoring point stabilized with a water filled tank serving as counter weights to the plane trusses is the design consideration for the user going forward. There will be three concepts designed and analyzed and overall the safety of the structure in a free-standing space.\\
+Therefore, the proposed design of the structure shall be comprised of two plane trusses separated by 36 inches. The truss shall fit within a specified plane envelope and will be weighed by the anchor points with water counterweights in a plastic tank.\\ 
+\section{Objective}
+The objective of this design project is to design a planar truss to be used in this proposed concept for anchoring the TRX Suspension System. The volume of water required for stability and the corresponding dimensions for the water tank are also to be determined to verify the feasibility of the design concept. The truss sections will be explored by method of joints as separate design concepts. \\
 
-The project goal is to reduce the weight of a BWB-integrated-UAV(BITU), which will be introduced in next chapter. Under specific loading and boundary conditions that calculated through X-Foil and AVL, and implemented topology optimization algorithm through commercial software ABAQUS both in 2D and 3D model.
+\chapter{Problem Statement}
+\section{Problem Definition}
+The problem in the development of a free-standing structure that can be packaged and installed by home TRX users, therefore we need to provide a TRX system anchoring point stabilized at the bottom with a water-filled tank that will serve as a counterbalance. This way, the counterbalance will weigh the two plane trusses at the connection to the ground separated by $36$ inches max. The entire truss sections will fit in a two rectangular mesh truss envelope.\\
 
-\section{Objectives}
-
-The objective of this project is to minimize compliance(strain energy in this problem) of UAV wing, while maintain a volume fraction of initial design space less than 30\%.
-
-
-\chapter{Problem Definition}
-
-In this section, several related concepts will be explained for better understanding the process of project.
-
-% \section{BWB-Integrated-UAV(BITU)}
-% \includegraphics{1_1}\\[1.6cm]
-
-% \section{Original Structural Configuration of BITU}
+To clarify the scope of the project :
+\subsection{Engineering requirements}
 
 \chapter{Solution Procedure}
+Calculate the volume of water (tank dimensions) needed to provide the necessary reactions at the ground supports.
+Assume the weight of the water is equally distributed and applied to the two joints at ground level
 
+\section{Design and Analysis Process}
+The method of determining forces in the members of the truss is method of joints, where we look at the equilibrium of the pin at the joints. Since the forces are concurrent at the pin, there is no moment equation and only two equations for equilibrium.
+$$ \sum F_{x} = 0, \sum F_{y} = 0 $$
+To start, we analyze at a point where one known load and at most two unknown forces are there. The weight of each member is divided into two halves and htat is supported by each pin. To an extent, this method is directly inspired by the design and consequently influences the analysis phase. 
 \chapter{Conceptual Designs}
+Generate three (3) plane truss design concepts that meet the geometric constraints of the problems. Each design concept shall be statically determinant and stable. Sketches of the conceptual designs shall include the lengths of the truss members.
 
 \chapter{Analysis of the Proposed Designs}
-\chapter{Concept Selection}
+For each of the three truss concepts, perform two analyses, one for the load condition where θ = 0° and one for θ = 45°, to calculate the forces acting in each member (tension or compression).
+\section{Results}
+include a table for each concept listing the length and the calculated force in each member, and the total length of the truss members required for each concept.
+\subsection{Concept 1}
+\subsection{Concept 2}
+\subsection{Concept 3}
+
+\section{Design Concept Selection}
+Based on the analysis and the engineering requirements, make a recommendation as to which one of the three preliminary design concepts should be considered as a potential solution to this structural design problem. The truss design that does not exceed the truss member load ratings in any given member and has the least total length should be selected. If none of the three meet the load requirements, identify the design that should be considered as a starting point in future work and evaluate the feasibility of the concept. Do you think the concept can be modified to meet the design requirements?
+\subsection{Feasibility of the Design Concept}
 
 \chapter{Conclusion}
 
 \chapter{Recommendations}
 
 \chapter{Works Cited}
-% [1] New topology optimization method for wing leading edge ribs, DOI 10.2514/1.DC031362
-
-% [2] Vinayak Kulkarni, Anil Jadhav, P.Basker, Finite Element Analysis and Topology Optimization of Lower Arm of Double Wishbone Suspensionusing RADIOSS and Optistruct,International Journal of Science and Research(IJSR), ISSN:2319-7064
-
-% [3] Po Wu, Qihua Ma, Yiping Luo, Chao Tao, Topology Optimization Design of Automotive Engine Bracket, Energy and Power Engineering, 2016,8,230-235
-
-% [4] Qi Wang, Zhenzhou Lu, Changcong Zhou, New Topology Optimization Method for Wing Leading-Edge Ribs, Journal of Aircraft, Vol.48, No.5, September-October 2011
-
-% [5] David Walker, David Liu, Alan Jennings, Topology Optimization of an Aircraft Wing, AIAA SciTech, 5-9 January 2015, Kissimmee, Florida
-
-% [6] Chen Zeng, Rosa Abnous, Souma Chowdhury, Aerodynamic Modeling and Optimization of a Blended-Wing-Body Transitioning UAV, The AIAA Aviation and Aeronautics Forum and Exposition, 5 - 9 June 2017, Denver, Colorado
-
-
-
-
-
-
-
-
-

@@ -5,17 +5,10 @@
 .
 ├── README.md
 ├── src/
-│   ├── coverpage.tex
-│   ├── contents.tex
-|   ├── introduction.tex
-|   ├── chap2.tex (Problem Definition)
-|   ├── chap3.tex (Solution Procedure)
-|   ├── chap4.tex (Conceptual Designs)
-|   ├── chap5.tex (Analysis of the Proposed Designs)
-|   ├── chap6.tex (Concept Selection)
-|   ├── chap7.tex (Conclusions)
-|   ├── chap8.tex (Recommendations)
-|   ├── appa.tex (Appendix A - Units/Tables/Formulas)
+│   ├── main.tex
+|   ├── front.tex
+|   ├── chapters.tex
+|   ├── appendix.tex (Appendix A - Units/Tables/Formulas)
 │   └── refs.bib (works cited)
 ├── Figures/
 │   ├── imags
